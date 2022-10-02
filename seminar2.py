@@ -33,10 +33,20 @@
 
 # str1 = 'ssabababasdaasd'
 # str2 = 'aba'
-# length = len(str1) - len(str2)
-# count = 0
-# for i in range(length):
-#     if str2 in str1[i:i + len(str2)]:
-#         count += 1
-# print(count)
+#
+# def f(str1, str2):
+#     count = 0
+#     for i in range(len(str1) - len(str2)):
+#         print('->> ', str1[i:i + len(str2)] )
+#         if str2 == str1[i:i + len(str2)]:
+#             count += 1
+#     return count
+# print(f(str1, str2))
+
+# a = 5
+# b = a
+# print(id(a))
+# print(id(b))
+# print(a == b)
+# print(a is b)       # сравнение
 
