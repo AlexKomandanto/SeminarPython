@@ -68,8 +68,8 @@
 
 
 # Задание 5 Реализуйте алгоритм перемешивания списка.
-#   random.randint(2, 6)
-#  random.randrange(2, 6)
+# можно использовать  random.randint(2, 6)
+#                     random.randrange(2, 6)
 
 
 # import random
