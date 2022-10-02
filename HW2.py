@@ -43,7 +43,7 @@
 #     Ni = round((1 + (1 / i)) ** i, 3)
 #     list.append(Ni)
 #     sum += round(Ni, 3)
-# list.append(sum)
+# print(list)
 # print(f'N = {N} -> {sum}')
 
 
