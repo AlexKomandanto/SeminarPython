@@ -63,5 +63,9 @@
 # print(result, end=' ')   # end=' ' вывод в одну строку
 
 
+import lection as l
+
+print(l.f(1))
+
 
 

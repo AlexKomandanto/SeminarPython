@@ -34,13 +34,16 @@
 # str1 = 'ssabababasdaasd'
 # str2 = 'aba'
 #
+#
 # def f(str1, str2):
 #     count = 0
-#     for i in range(len(str1) - len(str2)):
-#         print('->> ', str1[i:i + len(str2)] )
+#     for i in range((len(str1) + 1) - len(str2)):  # range - не считает последний индекс по умолчанию
+#         print('->> ', str1[i:i + len(str2)])
 #         if str2 == str1[i:i + len(str2)]:
 #             count += 1
 #     return count
+#
+#
 # print(f(str1, str2))
 
 # a = 5
@@ -49,4 +52,3 @@
 # print(id(b))
 # print(a == b)
 # print(a is b)       # сравнение
-
