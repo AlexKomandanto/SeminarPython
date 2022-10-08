@@ -341,8 +341,9 @@
 #     print(k)
 # for v in dictionary.values():   # все значения
 #     print(v)
-
-
+# dictionary.setdefault(2, 2222)
+# dictionary.setdefault(5, 5555)   # добавление
+# print(dictionary)
 # print(dictionary['up']) # ↑
 # # типы ключей могут отличаться
 # dictionary['left'] = '⇐'
