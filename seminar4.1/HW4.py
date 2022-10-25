@@ -98,18 +98,18 @@ def read_file(file):
 
 
 def convert_file(text):
-    text = text.replace('= 0', '')
-    text = re.sub("[*|^| ]", " ", text).split('+')
+    text = text.replace("= 0", "")
+    text = re.sub("[*|^| ]", " ", text).split("+")
     text = [char.split(' ') for char in text]
     text = [[x for x in list if x] for list in text]
     for i in text:
-        if i[0] == 'x':
+        if i[0] == "x":
             i.insert(0, 1)
-        if i[-1] == 'x':
+        if i[-1] == "x":
             i.append(1)
         if len(i) == 1:
             i.append(0)
-    text = [tuple(int(x) for x in j if x != 'x') for j in text]
+    text = [tuple(int(x) for x in j if x != "x") for j in text]
     return text
 
 

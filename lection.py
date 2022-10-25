@@ -432,3 +432,176 @@
 # print(list1.append(11)) # добавление индекса в конец списка(обьект)
 # print(list1)
 
+# def f(x):                 # присвоение пременной с помощью которой можно вызывать функции
+#     return x ** 2
+#
+#
+# g = f
+# print(type(f))
+# print(type(g))
+#
+# print(f(4))
+# print(g(4))
+
+
+# def calc1(x):
+#     return x + 10
+# print(calc1(10))
+#
+#
+# def calc2(x):               # создание функции
+#     return x * 10
+# print(calc2(10))
+
+
+# def math(op, x):            #ор - имя функции
+#     print(op(x))
+# math(calc2, 10)             # вызов функции
+# math(calc1, 5)
+
+# def sum(x, y):
+#     return x+y
+# sum = lambda x, y: x+y      # создание функции через 'lambda'  наподобии той что выше
+# def mylt(x, y):
+#     return x*y
+#
+# def calc(op, a, b):
+#     print(op(a, b))
+#     # return op(a, b)
+#
+#
+# calc(sum, 4, 5)
+
+# list = []
+#
+# for i in range(1, 101):
+#     if(i%2 == 0):
+#         list.append(i)
+#
+# print(list)
+
+# list = [i for i in range(1, 21) if (i % 2 == 0) - 1]      # вывод нечетных чисел
+# print(list)
+
+# list = [(i, i) for i in range(1, 21) if (i % 2 == 0) - 1]       #  вывод картежей
+# print(list)
+
+
+# def f(x):
+#     return x**3         # возведение в степень 3
+# list = [(i, f(i)) for i in range(1, 21) if (i % 2 == 0) - 1]       #  вывод картежей
+# print(list)
+
+
+# list = [1, 2, 3, 4, 8, 15, 23, 38]
+
+
+# def select(f, col):     # проход по значения индекса
+#     return [f(x) for x in col]
+#
+# def where(f, col):          # проход по индексам
+#     return [x for x in col if f(x)]
+#
+# data = '1 2 3 4 8 15 23 38'.split()
+#
+# res = select(int, data)                     # запись строки в инты
+# res = where(lambda x: not x%2, res)         # вывод четных чисел
+# res = select(lambda x: (x, x ** 2), res)    # вызведение четных в степень квадрат
+# print(res)
+
+
+# Функция map
+# Функция map() применяет указанную функцию к
+# каждому элементу итерируемого объекта и
+# возвращает итератор с новыми объектами.
+# f(x) ⇒ x + 10
+# map(f, [ 1, 2, 3, 4, 5])
+#  ↓ ↓ ↓ ↓ ↓
+#  [ 11, 12, 13, 14, 15]
+# Нельзя пройтись дважды
+
+#  в значениях .split()  по умолчанию используются пробелы, можно сделать разделение по (',')
+
+# li = [x for x in range(1, 20)]
+#
+# li = list(map(lambda x:x+10, li))
+#
+# print(li)
+
+# data = list(map(int,input().split())) # сохранение данных проходит через создание списка 'list'
+#                                         # дальше уже можно с ними работать
+# print(data)
+
+
+# упрощение через функцию "mар"
+# def where(f, col):          # проход по индексам
+#     return [x for x in col if f(x)]
+#
+# data = '1 2 3 4 8 15 23 38'.split()
+#
+# res = map(int, data)                     # запись строки в инты
+# res = where(lambda x: not x%2, res)         # вывод четных чисел
+# res = list(map(lambda x: (x, x ** 2), res))    # вызведение четных в степень квадрат
+# print(res)
+
+# Функция filter
+# Функция filter() применяет указанную функцию к
+# каждому элементу итерируемого объекта и
+# возвращает итератор с теми объектами, для
+# которых функция вернула True.
+# f(x) ⇒ x - чётное
+# filter(f, [ 1, 2, 3, 4,5])
+#  ↓
+#  [ 2, 4 ]
+# Нельзя пройтись дважды
+
+# data = [x for x in range(10)]
+#
+# res = list(filter(lambda x: not x % 2, data))
+# print(res)
+
+
+# упрощение через функцию "mар" и "filter"
+
+# data = '1 2 3 4 8 15 23 38'.split()
+#
+# res = map(int, data)                     # запись строки в инты
+# res = filter(lambda x: not x%2, res)         # вывод четных чисел
+# res = list(map(lambda x: (x, x ** 2), res))    # вызведение четных в степень квадрат
+# print(res)
+
+# Функция zip
+# Функция zip() применяется к набору итерируемых
+# объектов и возвращает итератор с кортежами из
+# элементов входных данных.
+# Количество элементов в результате равно минимальному количеству элементов входного набора
+# zip ([1, 2, 3], [ ‘о‘, ‘д‘, ‘т‘], [‘f’,’s’,’t’])
+#  ↓
+# [(1, 'о', 'f'), (2, 'д', 's'), (3, 'т', 't')]
+# Нельзя пройтись дважды
+
+# users = ['user1', 'user2', 'user3', 'user4', 'user5', ]
+# ids = [4, 5, 9, 14, 7]
+# salary = [111, 222, 333]
+#
+# data = list(zip(users, ids, salary))
+# print(data)
+
+
+# Функция enumerate
+# Функция enumerate() применяется к итерируемому
+# объекту и возвращает новый итератор с кортежами
+# из индекса и элементов входных данных.
+# enumerate(['Казань', 'Смоленск', 'Рыбки', 'Чикаго'])
+#  ↓
+# [(0, 'Казань'), (1, 'Смоленск'), (2, 'Рыбки'), (3, 'Чикаго')]
+# Нельзя пройтись дважды
+
+# users = ['user1', 'user2', 'user3', 'user4', 'user5', ]
+# ids = [4, 5, 9, 14, 7]
+# salary = [111, 222, 333]
+#
+# data = list(enumerate(users))
+# print(data)
+
+
