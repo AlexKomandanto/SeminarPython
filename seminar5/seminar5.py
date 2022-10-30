@@ -65,7 +65,6 @@
 #     print(item)
 
 
-
 # 1 2 3 4 6 7 8 9
 #
 # 1. В файле находится N натуральных чисел, записанных через пробел.
@@ -84,17 +83,16 @@
 #
 # print(string[a]-1)           # вывели полученное значение
 
-with open("file_task1", "w", encoding="UTF-8") as data_file:
-    data_file.write("1 2 3 4 5 7 8 9")                      # создали файл и записали в него данные
-with open("file_task1", "r", encoding="UTF-8") as data_file:
-    string = data_file.readline()                            # открыли файл и прочитали с него данные
-string = list(map(int, string.split()))
-
-for i1, i2 in zip(string, range(string[0], string[0] + len(string))):
-    if i1 != i2:
-        print(i2)
-        break
-
+# with open("file_task1", "w", encoding="UTF-8") as data_file:
+#     data_file.write("1 2 3 4 5 7 8 9")                      # создали файл и записали в него данные
+# with open("file_task1", "r", encoding="UTF-8") as data_file:
+#     string = data_file.readline()                            # открыли файл и прочитали с него данные
+# string = list(map(int, string.split()))
+#
+# for i1, i2 in zip(string, range(string[0], string[0] + len(string))):
+#     if i1 != i2:
+#         print(i2)
+#         break
 
 
 # 2. Напишите программу, удаляющую из текста все слова, содержащие "абв". <- filter
@@ -115,8 +113,3 @@ for i1, i2 in zip(string, range(string[0], string[0] + len(string))):
 # result_filter = filter(true_or_not, list_)
 # for i in result_filter:
 #     print(i)
-
-
-
-
-
