@@ -1,0 +1,7 @@
+[2023-05-11 13:43:04,374] [INFO] [base_create] [start: 24] => User create base_phone.csv file
+[2023-05-11 13:43:04,385] [INFO] [u_i] [<module>: 6] => The beginning of your work
+[2023-05-11 13:43:04,397] [INFO] [base_create] [start: 24] => User create base_phone.csv file
+[2023-05-11 13:43:04,397] [INFO] [main] [<module>: 7] => Start
+[2023-05-11 13:45:14,588] [INFO] [u_i] [ls_menu: 26] => The user has selected item number 0
+[2023-05-11 13:45:48,890] [INFO] [u_i] [ls_menu: 172] => End
+[2023-05-11 13:45:48,896] [INFO] [u_i] [ls_menu: 176] => User create base.html - file
